@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build:
+  test:
     working_directory: ~/secondProject
     docker:
       - image: "circleci/python:3.6.4"
@@ -12,5 +12,5 @@ jobs:
 workflows:
   build:
     jobs:
-      - build
+      - test
      
