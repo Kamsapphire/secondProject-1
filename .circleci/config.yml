@@ -2,12 +2,12 @@ version: 2.1
 
 jobs:
   test:
-    working_directory: ~/secondProject
+    working_directory: ~/repo/secondProject
     docker:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
-      - run: python3 main.py
+      - run: python3 Test.py
 
 workflows:
   build:
