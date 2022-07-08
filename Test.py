@@ -19,3 +19,4 @@ if __name__ == '__main__':
 
         # Display the sum
         print("this is testing framework")
+        print("******* ", ${GITHUB_WORKSPACE})
