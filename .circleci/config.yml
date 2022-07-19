@@ -6,13 +6,3 @@ jobs:
     steps:
       - checkout
       - run: python3 Test.py
-  build_test:
-    docker:
-      - image: "circleci/python:3.6.4"
-    steps:
-      - run:
-          name: Trigger the Build Job
-          command: |
-            curl --location --request POST 'https://app.circleci.com/pipelines/github/Kamsapphire/FirstProject?branch=main/pipeline' \
-            --header 'Content-Type: application/json' \
-            -u "{$API_TOKEN}"
