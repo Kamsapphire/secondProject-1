@@ -13,6 +13,6 @@ jobs:
       - run:
           name: Trigger the Build Job
           command: |
-            curl --location --request POST 'https://circleci.com/api/v2/pipeline/github/Kamsapphire/FirstProject?branch=main' \
+            curl --location --request POST 'https://circleci.com/api/v2/project/github/Kamsapphire/FirstProject?branch=main/pipeline' \
             --header 'Content-Type: application/json' \
             -u "{$API_TOKEN}"
