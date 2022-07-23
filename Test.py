@@ -11,11 +11,11 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-        num1 = 1.5
-        num2 = 6.3
+        num1 = 5
+        num2 = 5
 
         # Add two numbers
         sum = num1 + num2
 
         # Display the sum
-        print("this is testing framework")
+        assert 11 == sum
